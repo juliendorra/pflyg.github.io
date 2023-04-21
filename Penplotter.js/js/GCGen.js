@@ -49,7 +49,7 @@ export default class GCGen {
     this.output.push("G4 S" + s)
   }
   getToPosition(pos){
-    if(this.lastPos.isEqual(pos) || this.lastPos.dist2(pos) <= 0.01)return;
+    //if(this.lastPos.isEqual(pos) || this.lastPos.dist2(pos) <= 0.01)return;
     this.liftPen();
     this.move(pos);
   }
